@@ -3,7 +3,7 @@ package princetonPlainsboro;
 public class Acte {
     private Code code;
     private int coef;
-    private int deto;
+    private int red;
     
     public Acte(Code code, int coef) {
         this.code = code;
