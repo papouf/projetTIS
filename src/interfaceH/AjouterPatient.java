@@ -57,7 +57,7 @@ public class AjouterPatient extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(218, 230, 242));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DonnÃ©es/Retour.jpg"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Retour.jpg"))); // NOI18N
         jButton1.setName("Retour"); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,7 +79,7 @@ public class AjouterPatient extends javax.swing.JFrame {
         });
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel3.setText("PrÃ©nom :");
+        jLabel3.setText("Prénom :");
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +87,7 @@ public class AjouterPatient extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setText("NÂ° SÃ©curitÃ© Sociale :");
+        jLabel4.setText("N° Sécurité Sociale :");
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +104,7 @@ public class AjouterPatient extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DonnÃ©es/valider.jpg"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/valider.jpg"))); // NOI18N
         jButton2.setToolTipText("");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +113,7 @@ public class AjouterPatient extends javax.swing.JFrame {
         });
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel6.setText("TÃ©lÃ©phone :");
+        jLabel6.setText("Téléphone :");
 
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -71,7 +71,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
             }
         });
 
-        Recherche_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donn√©es/Loupe.png"))); // NOI18N
+        Recherche_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DonnÈes/Loupe.png"))); // NOI18N
         Recherche_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Recherche_1ActionPerformed(evt);
@@ -125,7 +125,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
 
         jTextField1.getAccessibleContext().setAccessibleName("");
 
-        jTabbedPane6.addTab("M√©decin", jPanel1);
+        jTabbedPane6.addTab("MÈdecin", jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(218, 230, 242));
 
@@ -138,7 +138,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
             }
         });
 
-        Recherche_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donn√©es/Loupe.png"))); // NOI18N
+        Recherche_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DonnÈes/Loupe.png"))); // NOI18N
         Recherche_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Recherche_2ActionPerformed(evt);
@@ -190,7 +190,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
                 .addContainerGap(80, Short.MAX_VALUE))
         );
 
-        jTabbedPane6.addTab("Secr√©taire m√©dicale", jPanel2);
+        jTabbedPane6.addTab("SecrÈtaire mÈdicale", jPanel2);
 
         jPanel3.setBackground(new java.awt.Color(218, 230, 242));
 
@@ -203,7 +203,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donn√©es/Loupe.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DonnÈes/Loupe.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -255,11 +255,11 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
                 .addContainerGap(80, Short.MAX_VALUE))
         );
 
-        jTabbedPane6.addTab("Secr√©taire administrative", jPanel3);
+        jTabbedPane6.addTab("SecrÈtaire administrative", jPanel3);
 
-        Retour_Arriere.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donn√©es/Retour.jpg"))); // NOI18N
-        Retour_Arriere.setToolTipText("Retour_arri√®re");
-        Retour_Arriere.setName("Retour_arri√®re"); // NOI18N
+        Retour_Arriere.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Retour.jpg"))); // NOI18N
+        Retour_Arriere.setToolTipText("Retour_arriËre");
+        Retour_Arriere.setName("Retour_arriËre"); // NOI18N
         Retour_Arriere.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Retour_ArriereActionPerformed(evt);
@@ -292,7 +292,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
                 .addComponent(jTabbedPane6))
         );
 
-        Retour_Arriere.getAccessibleContext().setAccessibleName("Retour_arri√®re");
+        Retour_Arriere.getAccessibleContext().setAccessibleName("Retour_arriËre");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

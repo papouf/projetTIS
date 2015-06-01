@@ -70,14 +70,14 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
         });
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("Pr√©nom :");
+        jLabel3.setText("PrÈnom :");
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel4.setText("Sp√©cialit√© :");
+        jLabel4.setText("SpÈcialitÈ :");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cardiologue", "P√©diatre", "Oncologue" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cardiologue", "PÈdiatre", "Oncologue" }));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donn√©es/Ajouter.jpg"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Ajouter.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -120,7 +120,7 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane6.addTab("M√©decin", jPanel1);
+        jTabbedPane6.addTab("MÈdecin", jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(218, 230, 242));
 
@@ -128,9 +128,9 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
         jLabel5.setText("Nom :");
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel6.setText("Pr√©nom :");
+        jLabel6.setText("PrÈnom :");
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donn√©es/Ajouter.jpg"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DonnÈes/Ajouter.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -169,7 +169,7 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane6.addTab("Secr√©taire m√©dicale", jPanel2);
+        jTabbedPane6.addTab("SecrÈtaire mÈdicale", jPanel2);
 
         jPanel3.setBackground(new java.awt.Color(218, 230, 242));
 
@@ -177,9 +177,9 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
         jLabel7.setText("Nom :");
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel8.setText("Pr√©nom :");
+        jLabel8.setText("PrÈnom :");
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donn√©es/Ajouter.jpg"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DonnÈes/Ajouter.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -221,11 +221,11 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane6.addTab("Secr√©taire administrative", jPanel3);
+        jTabbedPane6.addTab("SecrÈtaire administrative", jPanel3);
 
-        Retour_Arriere.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Donn√©es/Retour.jpg"))); // NOI18N
-        Retour_Arriere.setToolTipText("Retour_arri√®re");
-        Retour_Arriere.setName("Retour_arri√®re"); // NOI18N
+        Retour_Arriere.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Retour.jpg"))); // NOI18N
+        Retour_Arriere.setToolTipText("Retour_arriËre");
+        Retour_Arriere.setName("Retour_arriËre"); // NOI18N
         Retour_Arriere.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Retour_ArriereActionPerformed(evt);

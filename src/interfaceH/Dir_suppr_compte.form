@@ -403,7 +403,7 @@
         <Component class="javax.swing.JButton" name="Retour_Arriere">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Donn&#xe9;es/Retour.jpg"/>
+              <Image iconType="3" name="/donnees/Retour.jpg"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value="Retour_arri&#xe8;re"/>
             <Property name="name" type="java.lang.String" value="Retour_arri&#xe8;re" noResource="true"/>

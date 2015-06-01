@@ -126,7 +126,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Donn&#xe9;es/Retour.jpg"/>
+              <Image iconType="3" name="/donnees/Retour.jpg"/>
             </Property>
             <Property name="name" type="java.lang.String" value="Retour" noResource="true"/>
           </Properties>
@@ -193,7 +193,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Donn&#xe9;es/valider.jpg"/>
+              <Image iconType="3" name="/donnees/valider.jpg"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
