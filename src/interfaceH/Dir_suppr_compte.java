@@ -71,7 +71,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
             }
         });
 
-        Recherche_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Données/Loupe.png"))); // NOI18N
+        Recherche_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Loupe.png"))); // NOI18N
         Recherche_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Recherche_1ActionPerformed(evt);

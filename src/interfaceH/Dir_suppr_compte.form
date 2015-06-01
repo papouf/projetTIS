@@ -145,7 +145,7 @@
                 <Component class="javax.swing.JButton" name="Recherche_1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Donn&#xe9;es/Loupe.png"/>
+                      <Image iconType="3" name="/donnees/Loupe.png"/>
                     </Property>
                   </Properties>
                   <Events>

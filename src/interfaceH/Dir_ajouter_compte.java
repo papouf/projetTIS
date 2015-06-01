@@ -130,7 +130,7 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("Prénom :");
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Données/Ajouter.jpg"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Ajouter.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -179,7 +179,7 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel8.setText("Prénom :");
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Données/Ajouter.jpg"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Ajouter.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
