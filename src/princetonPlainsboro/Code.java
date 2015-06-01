@@ -6,7 +6,7 @@ package princetonPlainsboro;
 // Par exemple, la valeur Code.FP a un attribut 'libelle' contenant la chaine
 // de caracteres "forfait pediatrique" et un attribut 'cout' ayant la valeur 5.0
 
-enum Code {
+public enum Code {
     // valeurs de l'ï¿½num :
     C("consultation au cabinet", 23.0),
     CDE("consultation de dépistage du mélanome ", 47.00),

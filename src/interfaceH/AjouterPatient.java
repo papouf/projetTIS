@@ -4,13 +4,24 @@
  * and open the template in the editor.
  */
 package interfaceH;
-
+import java.awt.event.ActionEvent;
+import static java.lang.String.valueOf;
+import javax.swing.JOptionPane;
+import princetonPlainsboro.Date;
+import princetonPlainsboro.DossierMedical;
+import princetonPlainsboro.Patient;
+import javax.swing.JOptionPane;
 /**
  *
  * @author margot
  */
 public class AjouterPatient extends javax.swing.JFrame {
-
+    private String nom;
+    private String prenom;
+    private long num_secu;
+    private Date date_nai;
+    private String num_tel;
+    
     /**
      * Creates new form AjouterPatient
      */
@@ -47,6 +58,7 @@ public class AjouterPatient extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(218, 230, 242));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Données/Retour.jpg"))); // NOI18N
+        jButton1.setName("Retour"); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -69,6 +81,12 @@ public class AjouterPatient extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel3.setText("Prénom :");
 
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+
         jLabel4.setText("N° Sécurité Sociale :");
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +104,7 @@ public class AjouterPatient extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Données/valider.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Données/valider.jpg"))); // NOI18N
         jButton2.setToolTipText("");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,7 +152,7 @@ public class AjouterPatient extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,8 +181,8 @@ public class AjouterPatient extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -182,28 +200,60 @@ public class AjouterPatient extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
+        nom=jTextField1.getText();
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
-        // TODO add your handling code here:
+        date_nai=StringToDate(jTextField1.getText());
     }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+    
+    public Date StringToDate(String s) {
+        int jour = Integer.parseInt(s.substring(0, s.indexOf('/')));
+        int mois = Integer.parseInt(s.substring(s.indexOf('/') + 1, s.lastIndexOf('/')));
+        int annee = Integer.parseInt(s.substring(s.lastIndexOf('/') + 1, s.length()));
 
+        Date date = new Date(jour, mois, annee);
+        return date;
+    }
+    
+    
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
+        num_tel=jTextField4.getText();
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        DossierMed dossierMed = new DossierMed();
+        dossierMed.setVisible(true); 
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
+        num_secu=Long.parseLong(jTextField2.getText());
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        if (jTextField1.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "Veuillez rentrer un nom", "Erreur", JOptionPane.ERROR_MESSAGE);
+        } else if (jTextField2.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "Veuillez rentrer un prénom", "Erreur", JOptionPane.ERROR_MESSAGE);
+        } else if (jTextField3.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "Veuillez rentrer un numéro de sécurité sociale", "Erreur", JOptionPane.ERROR_MESSAGE);
+        } else if (jFormattedTextField1.getText().equals("") ) {
+            JOptionPane.showMessageDialog(null, "Veuillez rentrer une date de naissance au format JJ/MM/AA", "Erreur", JOptionPane.ERROR_MESSAGE);
+        } else if (jTextField4.getText().equals("") ) {
+            JOptionPane.showMessageDialog(null, "Veuillez rentrer un numéro de téléphone", "Erreur", JOptionPane.ERROR_MESSAGE);
+        } else{
+            AjouterActe ajoutActe = new AjouterActe();
+        ajoutActe.setVisible(true); 
+        this.setVisible(false);
+        }
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -237,6 +287,7 @@ public class AjouterPatient extends javax.swing.JFrame {
             public void run() {
                 new AjouterPatient().setVisible(true);
             }
+            
         });
     }
 
