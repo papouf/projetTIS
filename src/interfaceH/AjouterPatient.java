@@ -243,8 +243,8 @@ public class AjouterPatient extends javax.swing.JFrame {
         } else if (jTextField4.getText().equals("") ) {
             JOptionPane.showMessageDialog(null, "Veuillez rentrer un numéro de téléphone", "Erreur", JOptionPane.ERROR_MESSAGE);
         } else{
-            AjouterActe ajoutActe = new AjouterActe();
-        ajoutActe.setVisible(true); 
+            DossierMed dossierMed = new DossierMed();
+        dossierMed.setVisible(true); 
         this.setVisible(false);
         }
         // TODO add your handling code here:
