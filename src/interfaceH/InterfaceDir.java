@@ -110,20 +110,25 @@ public class InterfaceDir extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        Dir_suppr_compte supprCompte = new Dir_suppr_compte();
+        supprCompte.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        Dir_ajouter_compte ajoutCompte = new Dir_ajouter_compte();
+        ajoutCompte.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        //JOptionPane.showMessageDialog(null, "Êtes-vous sûre de vouloir vous déconnecter?", "Déconnexion", JOptionPane.QUESTION_MESSAGE);
-        //log login = new log();
-        //login.setVisible(true);
-        //sthis.setVisible(false);
+        int rep = JOptionPane.showConfirmDialog(null, "Voulez vous supprimer le médecin ?");
+        if (rep == JOptionPane.YES_OPTION) {
+            Log login = new Log();
+        login.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
     /**
      * @param args the command line arguments
      */

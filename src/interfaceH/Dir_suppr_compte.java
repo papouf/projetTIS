@@ -138,7 +138,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
             }
         });
 
-        Recherche_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Données/Loupe.png"))); // NOI18N
+        Recherche_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Loupe.png"))); // NOI18N
         Recherche_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Recherche_2ActionPerformed(evt);
@@ -203,7 +203,7 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Données/Loupe.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Loupe.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -317,7 +317,9 @@ public class Dir_suppr_compte extends javax.swing.JFrame {
     }//GEN-LAST:event_Recherche_1ActionPerformed
 
     private void Retour_ArriereActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Retour_ArriereActionPerformed
-        // TODO add your handling code here:
+        InterfaceDir interfaceDir = new InterfaceDir();
+        interfaceDir.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_Retour_ArriereActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed

@@ -131,6 +131,11 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
         jLabel6.setText("Prénom :");
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Ajouter.jpg"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -273,12 +278,21 @@ public class Dir_ajouter_compte extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Retour_ArriereActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Retour_ArriereActionPerformed
-        // TODO add your handling code here:
+        InterfaceDir interfaceDir = new InterfaceDir();
+        interfaceDir.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_Retour_ArriereActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        
+        InterfaceDir interfaceDir = new InterfaceDir();
+        interfaceDir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
