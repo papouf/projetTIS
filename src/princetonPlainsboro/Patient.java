@@ -3,6 +3,7 @@ package princetonPlainsboro;
 class Patient {
     private String nom;
     private String prenom;
+    private long ss;
     
     public Patient(String nom, String prenom) {
         this.nom = nom;
