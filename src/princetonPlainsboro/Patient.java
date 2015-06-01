@@ -5,6 +5,7 @@ public class Patient {
     private String prenom;
     private long ss;
     private int tel;
+    private Date dateNa;
     
     public Patient(String nom, String prenom) {
         this.nom = nom;
@@ -23,5 +24,18 @@ public class Patient {
         else
             return false;
         }    
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public long getNumSecu() {
+        return ss;
+    }
+    public long getTel() {
+        return tel;
+    }
+    public Date getDateNa() {
+        return dateNa;
+    }
     }
 
