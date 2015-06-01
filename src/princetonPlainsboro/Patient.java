@@ -4,6 +4,7 @@ public class Patient {
     private String nom;
     private String prenom;
     private long ss;
+    private int tel;
     
     public Patient(String nom, String prenom) {
         this.nom = nom;
