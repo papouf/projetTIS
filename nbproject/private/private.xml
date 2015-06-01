@@ -3,12 +3,26 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/InterfaceMedecin.java</file>
-            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/Code.java</file>
-            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/LectureXML.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/InterfaceMed.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/AjouterPatient.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/Patient.java</file>
             <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/FicheDeSoins.java</file>
-            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/AjouterActe.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/ajoutFiche.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/Login.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/Date.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/donnees/FileForTestingGit.xsd</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/DossierMedical.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/Test.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/Code.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/DossierMed.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/Medecin.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/InterfaceMedecin.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/LectureXML.java</file>
             <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/InterfaceSA.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/princetonPlainsboro/Acte.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/Dir_suppr_compte.java</file>
+            <file>file:/C:/Users/margot/Desktop/code%20projet/src/interfaceH/AjouterActe.java</file>
         </group>
     </open-files>
 </project-private>
