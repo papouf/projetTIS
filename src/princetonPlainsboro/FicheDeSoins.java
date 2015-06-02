@@ -53,5 +53,23 @@ public class FicheDeSoins {
             }
         return total;
         }
+    
+        public String afficherString() {
+
+        String s = "Fiche de soins du " + date.toString();
+        s += "\n" + "- medecin : " + medecin.toString();
+        s += "\n" + "- patient : " + patient.fichePatient();
+        if (!actes.isEmpty()) {
+            s += "\n" + "- actes medicaux :";
+            for (int i = 0; i < actes.size(); i++) {
+                Acte a = actes.get(i);
+                s += "\n" + "    > " + a.toString();
+            }
+            s += "\n" + "- Cout total: " + this.coutTotal() + " €";
+        } else {
+            s += "\n" + "- Cout total: 0 €";
+        }
+        return s;
+    }
     }
 

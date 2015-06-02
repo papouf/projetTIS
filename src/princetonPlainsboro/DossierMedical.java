@@ -129,6 +129,20 @@ public class DossierMedical {
         }
     }
 
+     public String afficherString() {
+        System.out.println("afficherString dm");
+        String s = "Dossier medical informatise :";
+        s += "\n" + "-----------------------------";
+        for (int i = 0; i < fiches.size(); i++) {
+            System.out.println("boucle dm");
+            FicheDeSoins f = fiches.get(i);
+            s += "\n" + f.afficherString();
+            // pour separer les fiches de soins :
+            s += "\n" + "-------------------------------------";
+        }
+        return s;
+    }
+
     // tri generique :
     public void trier(ComparaisonFiches c) {
         Vector<FicheDeSoins> copieFiches = new Vector<FicheDeSoins>(fiches);

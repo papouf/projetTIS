@@ -1,11 +1,15 @@
 package princetonPlainsboro;
 
+import static java.lang.String.valueOf;
+
 public class Patient {
     private String nom;
     private String prenom;
-    private long ss;
-    private int tel;
+    private String adresse;
+    private Long ss;
     private Date dateNa;
+    private long tel;
+    private int cle;
     
     public Patient(String nom, String prenom) {
         this.nom = nom;
@@ -36,6 +40,14 @@ public class Patient {
     }
     public Date getDateNa() {
         return dateNa;
+    }
+    
+        public String fichePatient() {
+        String s = prenom + " " + nom;
+        s += "\n" + "numéro de sécurité sociale: " + valueOf(ss);
+        s += "\n" + "date de naissance: " + dateNa;
+        s += "\n" + "adresse: " + adresse;
+        return s;
     }
     }
 
