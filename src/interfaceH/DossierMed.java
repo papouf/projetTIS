@@ -5,6 +5,8 @@
  */
 package interfaceH;
 
+import princetonPlainsboro.MPanelPrinter;
+
 /**
  *
  * @author margot
@@ -178,7 +180,10 @@ public class DossierMed extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-      // TODO add your handling code here:
+      System.out.println("Lancer l'impression");
+        MPanelPrinter p =new MPanelPrinter(jList2,1);
+        p.print();
+        System.out.println("Appel de l'impression");    
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
