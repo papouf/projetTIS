@@ -42,10 +42,25 @@ public class InterfaceSA extends javax.swing.JFrame {
         jLabel1.setText("Accueil");
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/Dossier.jpg"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/regler.jpg"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/donnees/déconnexion.jpg"))); // NOI18N
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -87,6 +102,24 @@ public class InterfaceSA extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        DossierMed dossierMed = new DossierMed();
+        dossierMed.setVisible(true); 
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Facture facture = new Facture();
+        facture.setVisible(true); 
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Log2 login = new Log2();
+        login.setVisible(true); 
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -235,13 +235,13 @@ public class AjouterPatient extends javax.swing.JFrame {
         if (jTextField1.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "Veuillez rentrer un nom", "Erreur", JOptionPane.ERROR_MESSAGE);
         } else if (jTextField2.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "Veuillez rentrer un prÃ©nom", "Erreur", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Veuillez rentrer un prénom", "Erreur", JOptionPane.ERROR_MESSAGE);
         } else if (jTextField3.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "Veuillez rentrer un numÃ©ro de sÃ©curitÃ© sociale", "Erreur", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Veuillez rentrer un numéro de sécurité sociale", "Erreur", JOptionPane.ERROR_MESSAGE);
         } else if (jFormattedTextField1.getText().equals("") ) {
             JOptionPane.showMessageDialog(null, "Veuillez rentrer une date de naissance au format JJ/MM/AA", "Erreur", JOptionPane.ERROR_MESSAGE);
         } else if (jTextField4.getText().equals("") ) {
-            JOptionPane.showMessageDialog(null, "Veuillez rentrer un numÃ©ro de tÃ©lÃ©phone", "Erreur", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Veuillez rentrer un numéro de téléphone", "Erreur", JOptionPane.ERROR_MESSAGE);
         } else{
             DossierMed dossierMed = new DossierMed();
         dossierMed.setVisible(true); 
