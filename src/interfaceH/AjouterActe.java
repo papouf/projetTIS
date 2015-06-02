@@ -17,7 +17,7 @@ public class AjouterActe extends javax.swing.JFrame {
     private Code code;
     private int coeff;
     private String comm;
-    private AjoutFiche ajoutFiche;
+    private AjoutFiche2 ajoutFiche;
     private FicheDeSoins fiche;
     /**
      * Creates new form AjouterActe
@@ -26,7 +26,7 @@ public class AjouterActe extends javax.swing.JFrame {
         initComponents();
     }
 
-    public AjouterActe(AjoutFiche ajoutFiche){
+    public AjouterActe(AjoutFiche2 ajoutFiche){
         initComponents();
         //this.fiche=ajoutFiche.getFiche();
         this.ajoutFiche=ajoutFiche;
@@ -199,7 +199,7 @@ public class AjouterActe extends javax.swing.JFrame {
                 
                 System.out.println(acte.ficheActe());
                
-                AjoutFiche ajoutfiche = new AjoutFiche();
+                AjoutFiche2 ajoutfiche = new AjoutFiche2();
                 
                 ajoutfiche.setVisible(true); 
                 this.setVisible(false);
@@ -207,7 +207,7 @@ public class AjouterActe extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        AjoutFiche ajoutFiche = new AjoutFiche();
+        AjoutFiche2 ajoutFiche = new AjoutFiche2();
         ajoutFiche.setVisible(true);
         this.setVisible(false);       
     }//GEN-LAST:event_jButton2ActionPerformed
