@@ -168,6 +168,16 @@ public class AjouterActe extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (jTextField1.getText().equals("") || (!((jTextField1.getText()).toUpperCase()).equals("CS") 
+                && !((jTextField1.getText()).toUpperCase()).equals("AIS")
+                && !((jTextField1.getText()).toUpperCase()).equals("AMI")
+                && !((jTextField1.getText()).toUpperCase()).equals("CDE")
+                && !((jTextField1.getText()).toUpperCase()).equals("CNPSY")
+                && !((jTextField1.getText()).toUpperCase()).equals("D")
+                && !((jTextField1.getText()).toUpperCase()).equals("KME")
+                && !((jTextField1.getText()).toUpperCase()).equals("POD")
+                && !((jTextField1.getText()).toUpperCase()).equals("SF")
+                && !((jTextField1.getText()).toUpperCase()).equals("TO")
+                && !((jTextField1.getText()).toUpperCase()).equals("Z")
                 && !((jTextField1.getText()).toUpperCase()).equals("CSC")
                 && !((jTextField1.getText()).toUpperCase()).equals("C")
                 && !((jTextField1.getText()).toUpperCase()).equals("FP")
