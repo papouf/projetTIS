@@ -4,6 +4,7 @@ public class Acte {
     private Code code;
     private int coef;
     private String comm;
+    private String test;
     
     
     public Acte(Code code){
