@@ -156,7 +156,7 @@ public class EcritureXML {
         
         // date de naissance
         Element date = new Element("date");
-        date.addContent(patient.getDateNa().toStringXML());
+        date.addContent(patient.getDateDeNaissance().toStringXML());
         DOMpatient.addContent(date);
         
         //adresse
@@ -184,3 +184,4 @@ public class EcritureXML {
     }
     
 }
+
