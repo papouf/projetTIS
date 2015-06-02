@@ -359,7 +359,7 @@ public class InterfaceMed extends javax.swing.JFrame {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
        int rep = JOptionPane.showConfirmDialog(null, "Êtes vous sûre de vouloir vous déconnecter ?");
         if (rep == JOptionPane.YES_OPTION) {
-            Log login = new Log();
+            Log2 login = new Log2();
         login.setVisible(true);
         this.setVisible(false);
         }

@@ -124,7 +124,7 @@ public class InterfaceDir extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int rep = JOptionPane.showConfirmDialog(null, "Voulez vous supprimer le médecin ?");
         if (rep == JOptionPane.YES_OPTION) {
-            Log login = new Log();
+            Log2 login = new Log2();
         login.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
