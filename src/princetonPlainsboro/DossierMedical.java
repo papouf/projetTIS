@@ -16,15 +16,17 @@ public class DossierMedical {
         fiches.add(fiche);
     }
 
-    public void afficher() {
-        System.out.println("Dossier medical informatise :");
-        System.out.println("-----------------------------");
+    public String toString() {
+        String rep="";
+        rep="\nDossier medical informatise :";
+        rep+="\n-----------------------------";
         for (int i = 0; i < fiches.size(); i++) {
             FicheDeSoins f = fiches.get(i);
-            f.afficher();
+            f.toString();
             // pour separer les fiches de soins :
-            System.out.println("--------------------------------------");
+            rep+="\n--------------------------------------";
         }
+        return rep;
     }
 
     public double coutPatient(Patient p) {
@@ -76,6 +78,22 @@ public class DossierMedical {
             }
         }
     }
+    
+    public void afficherListeActes(Patient p) {
+        System.out.println("Liste des actes medicaux :");
+        System.out.println("--------------------------");
+        for (int i = 0; i < fiches.size(); i++) {
+            FicheDeSoins f = fiches.get(i);
+            if (p.equals(f.getPatient())) {
+                for (int j = 0; j < fiches.get(i).getActes().size(); j++) {
+                    //Definir getActe() dans Acte
+                    Acte a = fiches.get(i).getActes().get(j);
+                    System.out.println("-" + a.toString());
+                }
+            }
+        }
+    }
+
 
     public int nombreFichesIntervalle(Date d1, Date d2) {
         int n = 0;
@@ -104,7 +122,7 @@ public class DossierMedical {
                 }
             }
             // on affiche la fiche de soins trouvee :
-            f1.afficher();
+            f1.toString();
             System.out.println("------------------------");
             //on la supprime de la liste :
             copieFiches.remove(imin);
@@ -127,7 +145,7 @@ public class DossierMedical {
                 }
             }
             // on affiche la fiche de soins trouvee :
-            f1.afficher();
+            f1.toString();
             System.out.println("------------------------");
             //on la supprime de la liste :
             copieFiches.remove(imin);

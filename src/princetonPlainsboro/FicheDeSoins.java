@@ -12,12 +12,16 @@ public class FicheDeSoins {
         this.patient = patient;
         this.medecin = medecin;
         this.date = date;
-        actes = new Vector<Acte>();   // liste vide
+        actes = new Vector<Acte>();
+        // liste vide
         }
     
     public Patient getPatient() { return patient; }
     public Medecin getMedecin() { return medecin; }
     public Date    getDate()    { return date; }
+    public Vector<Acte> getActes(){
+        return actes;
+    }
     
     public void ajouterActe(Acte acte) {
         actes.add(acte);
@@ -28,15 +32,17 @@ public class FicheDeSoins {
         actes.add(acte);
         }
     
-    public void afficher() {
-        System.out.println("Fiche de soins du " + date.toString());
-        System.out.println("- medecin : " + medecin.toString());
-        System.out.println("- patient : " + patient.toString());
-        System.out.println("- actes medicaux :");
+    public String toString() {
+        String rep="";
+        rep ="\nFiche de soins du " + date.toString();
+        rep+="\n- medecin : " + medecin.toString();
+        rep+="\n- patient : " + patient.toString();
+        rep+="\n- actes medicaux :";
         for (int i=0; i<actes.size(); i++) {
             Acte a = actes.get(i);
-            System.out.println("    > " + a.toString());
+            rep+="\n    > " + a.toString();
             }
+        return rep;
         }
     
     public double coutTotal() {
