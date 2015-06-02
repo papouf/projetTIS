@@ -6,13 +6,19 @@
 package interfaceH;
 import javax.swing.JOptionPane;
 import princetonPlainsboro.Code;
+import princetonPlainsboro.Acte;
+import princetonPlainsboro.FicheDeSoins;
 /**
  *
  * @author margot
  */
 public class AjouterActe extends javax.swing.JFrame {
-
-    
+    private Acte acte;
+    private Code code;
+    private int coeff;
+    private String comm;
+    private AjoutFiche ajoutFiche;
+    private FicheDeSoins fiche;
     /**
      * Creates new form AjouterActe
      */
@@ -20,6 +26,11 @@ public class AjouterActe extends javax.swing.JFrame {
         initComponents();
     }
 
+    public AjouterActe(AjoutFiche ajoutFiche){
+        initComponents();
+        //this.fiche=ajoutFiche.getFiche();
+        this.ajoutFiche=ajoutFiche;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -52,6 +63,11 @@ public class AjouterActe extends javax.swing.JFrame {
 
         jLabel2.setText("Code de l'acte :");
 
+        jTextField1.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                jTextField1ComponentAdded(evt);
+            }
+        });
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -59,6 +75,12 @@ public class AjouterActe extends javax.swing.JFrame {
         });
 
         jLabel3.setText("Coéfficient :");
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Commentaire :");
 
@@ -144,10 +166,6 @@ public class AjouterActe extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-       
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (jTextField1.getText().equals("") || (!((jTextField1.getText()).toUpperCase()).equals("CS") 
                 && !((jTextField1.getText()).toUpperCase()).equals("CSC")
@@ -160,10 +178,30 @@ public class AjouterActe extends javax.swing.JFrame {
                 && !((jTextField1.getText()).toUpperCase()).equals("ORT")
                 && !((jTextField1.getText()).toUpperCase()).equals("PRO"))) {
             JOptionPane.showMessageDialog(null, "Veuillez rentrer le code de l'acte", "Erreur", JOptionPane.ERROR_MESSAGE);
-        } else{
-            AjoutFiche ajoutfiche = new AjoutFiche();
-        ajoutfiche.setVisible(true); 
-        this.setVisible(false);
+        } else{ 
+                if(jTextField2.getText().equals("")){
+                    
+                    if(jTextArea1.getText().equals("")){
+                        
+                        acte = new Acte(code);
+                        
+                          
+                    }
+                    else{  acte = new Acte(code, comm);}
+                }
+                else{
+                    if(jTextArea1.getText().equals("")){
+                         acte = new Acte(code, coeff);
+                    }
+                    else{  acte = new Acte(code, coeff, comm);}
+                }
+                
+                System.out.println(acte.ficheActe());
+               
+                AjoutFiche ajoutfiche = new AjoutFiche();
+                
+                ajoutfiche.setVisible(true); 
+                this.setVisible(false);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -172,6 +210,18 @@ public class AjouterActe extends javax.swing.JFrame {
         ajoutFiche.setVisible(true);
         this.setVisible(false);       
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        code= Code.valueOf((jTextField1.getText()).toUpperCase());
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        coeff = Integer.parseInt(jTextField2.getText());
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField1ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_jTextField1ComponentAdded
+     
+    }//GEN-LAST:event_jTextField1ComponentAdded
 
     /**
      * @param args the command line arguments
