@@ -156,6 +156,12 @@ public class LectureXML {
     }
 
     private static Code getCode(String code) {
+        if (code.equals("AIS")) {
+            return Code.AIS;
+        }
+        if (code.equals("AMI")) {
+            return Code.AMI;
+        }
         if (code.equals("C")) {
             return Code.C;
         }
@@ -170,6 +176,9 @@ public class LectureXML {
         }
         if (code.equals("CSC")) {
             return Code.CSC;
+        }
+        if (code.equals("D")) {
+            return Code.D;
         }
         if (code.equals("FP")) {
             return Code.FP;
@@ -195,8 +204,20 @@ public class LectureXML {
         if (code.equals("ORT")) {
             return Code.ORT;
         }
+        if (code.equals("POD")) {
+            return Code.POD;
+        }
         if (code.equals("PRO")) {
             return Code.PRO;
+        }
+        if (code.equals("SF")) {
+            return Code.SF;
+        }
+        if (code.equals("TO")) {
+            return Code.TO;
+        }
+        if (code.equals("Z")) {
+            return Code.Z;
         }
         // probleme : code inconnu
         return null;
